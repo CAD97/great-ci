@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Greeting","Greetings to some target"]]});
