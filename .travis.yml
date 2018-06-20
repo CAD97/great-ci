@@ -18,7 +18,7 @@ matrix:
         - rustup component add rustfmt-preview
         - cargo install clippy --version $CLIPPY_VERSION || echo "clippy already installed"
       script:
-        - cargo fmt -- --emit=diff
+        - cargo fmt -- --check
         - cargo clippy -- -D clippy
     - env: NAME='cargo-travis'
       sudo: required # travis-ci/travis-ci#9061
